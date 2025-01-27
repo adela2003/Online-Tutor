@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Playwrite+DE+Grund:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Playwrite+DE+Grund:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Online Tutor</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div
+        class="container-fluid d-flex logo justify-content-between align-items-center"
+      >
+        <!-- <img src="images/logo.png" alt="logo" /> -->
+        <a class="navbar-brand" href="#"
+          >Smart<span class="tutor">Tutor</span>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-center"
+          >
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#subjects">Subjects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+
+          <div class="buttons">
+            <!-- <button class="sign-in popup-btn">Login</button> -->
+            <button id="openPopup" class="register popup-btn">
+              Get started
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="header-line">
+      <p>
+        Are you an university or a school student for an online tutoring
+        partnership?
+      </p>
+    </div>
+    <div class="container">
+      <section id="home" class="hero-section">
+        <div class="text-container">
+          <h4>100% SATISFACTION GUARANTEE</h4>
+          <h1>
+            Find Your <br />
+            Perfect <span class="spn">Tutor</span>
+          </h1>
+          <p>
+            We help you find perfect tutor for 1-on-1 lessons. <br />
+            It is completely free and private.
+          </p>
+          <div class="button">
+            <button class="btn primary-btn">Get started</button>
+          </div>
+        </div>
+        <div class="images-container">
+          <div class="grid">
+            <div class="image-shape shape-left">
+              <img src="images/photo1.jpg" alt="Student 1" />
+            </div>
+            <div class="image-shape shape-square">
+              <img src="images/photo2.jpg" alt="Student 2" />
+            </div>
+            <div class="image-shape shape-square">
+              <img src="images/photo3.jpg" alt="Student 3" />
+            </div>
+            <div class="image-shape shape-right">
+              <img src="images/photo4.jpg" alt="Student 4" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class="banner">
+      <div class="banner-container">
+        <div class="banner-text">
+          <h4 class="number">870</h4>
+          <p class="text">Expert Tutors</p>
+        </div>
+        <div class="banner-text">
+          <h4 class="number">20,000+</h4>
+          <p class="text">Hours Tutored</p>
+        </div>
+        <div class="banner-text">
+          <h4 class="number">298</h4>
+          <p class="text">Subjects and Courses</p>
+        </div>
+        <div class="banner-text">
+          <h4 class="number">12,920</h4>
+          <p class="text">Active Students</p>
+        </div>
+      </div>
+    </section>
+    <!-- About Us Section -->
+    <section id="about" class="benefits-section">
+      <h2>Why Choose us</h2>
+      <p class="section-title">Benefit of online tutoring services with us</p>
+      <div class="grid-container">
+        <div class="grid-item">
+          <div class="icon"><img src="images/teacher.png" alt="icon1" /></div>
+          <h3>One-on-one Teaching</h3>
+          <p>
+            All of our special education experts have a degree in special
+            education.
+          </p>
+        </div>
+        <div class="grid-item">
+          <div class="icon">
+            <img src="images/clock.png" alt="icon2" />
+          </div>
+          <h3>24/7 Tutor Availability</h3>
+          <p>
+            Our tutors are always available to respond as quick as possible for
+            you.
+          </p>
+        </div>
+        <div class="grid-item">
+          <div class="icon">
+            <img
+              src="images/teacher-pointing-a-board-with-a-stick.png"
+              alt="icon3"
+            />
+          </div>
+          <h3>Interactive Whiteboard</h3>
+          <p>
+            Our digital whiteboard equipped with audio and video chat features.
+          </p>
+        </div>
+        <div class="grid-item">
+          <div class="icon"><img src="images/budget.png" alt="icon4" /></div>
+          <h3>Affordable Prices</h3>
+          <p>Choose an expert tutor based on your budget and per hour.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container">
+        <div class="feature-container">
+          <div class="fearture-image">
+            <div class="image square">
+              <img src="images/photo5.jpg" alt="photo5" />
+            </div>
+            <div class="image circle-image">
+              <img src="images/schedule.jpg" alt="photo5" />
+            </div>
+          </div>
+          <div class="feature-content">
+            <h4>CUSTOMIZE WITH YOUR SCEDULE</h4>
+            <h1>
+              Personalized Professional <br />
+              Online Tutor on Your Schedule
+            </h1>
+            <p>
+              Our scheduling system allows you to select based on your time.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              repellendus adipisci reiciendis rem delectus alias atque dolore
+              eos, quod sunt esse obcaecati nulla consequuntur rerum cumque
+              temporibus in maxime! Nulla!
+            </p>
+            <div class="button">
+              <button class="btn1 primary-btn">Get started</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="feature">
+      <div class="container">
+        <div class="container-feature">
+          <div class="contents">
+            <h4>CUSTOMIZE WITH YOUR SCHEDULE</h4>
+            <h1>
+              Talented and Qualified <br />
+              Tutors Serve You For Help
+            </h1>
+            <p>
+              Our scheduling system allows you to select based on your free
+              time. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Animi, eveniet. Assumenda quasi repellendus deleniti ipsa
+              cupiditate tempore facere ex sint consequatur? Voluptate facilis
+              sed nihil repellendus, sit harum debitis consequuntur?
+            </p>
+            <div class="button">
+              <button class="btn1 primary-btn">Get started</button>
+            </div>
+          </div>
+          <div class="image-section">
+            <div class="imgs first-img">
+              <img src="images/photo6.jpg" />
+            </div>
+            <div class="imgs second-img">
+              <img src="images/photo7.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Subjects Section -->
+    <section id="subjects" class="subjects">
+      <div class="container">
+        <h5 class="subject-title">OUR TUTOR SUBJECTS</h5>
+        <h2 class="section-heading">Find Online Tutor in Any Subject</h2>
+        <div class="subjects-container">
+          <div class="subject-card">
+            <i class="fas fa-cogs subject-icon"></i>
+            <p>Engineering</p>
+          </div>
+          <div class="subject-card">
+            <i class="fas fa-laptop-code subject-icon"></i>
+            <p>Programming</p>
+          </div>
+          <div class="subject-card">
+            <i class="fas fa-language subject-icon"></i>
+            <p>Languages</p>
+          </div>
+          <div class="subject-card">
+            <i class="fas fa-flask subject-icon"></i>
+            <p>Science</p>
+          </div>
+          <div class="subject-card">
+            <i class="fas fa-book subject-icon"></i>
+            <p>History</p>
+          </div>
+          <div class="subject-card">
+            <i class="fas fa-brain subject-icon"></i>
+            <p>Psychology</p>
+          </div>
+          <div class="subject-card">
+            <i class="fas fa-pencil-ruler subject-icon"></i>
+            <p>Web Design</p>
+          </div>
+          <div class="subject-card">
+            <i class="fas fa-ellipsis-h subject-icon"></i>
+            <p>See all</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+      <h5 class="section-subtitle">OUR TESTIMONIALS</h5>
+      <h2 class="section-title">What Our Students Say About Us</h2>
+
+      <div class="testimonial-container">
+        <!-- User Images -->
+        <div class="user-images">
+          <img src="images/person1.jpg" alt="User 1" class="user-img left" />
+          <img src="images/person2.jpg" alt="User 2" class="user-img center" />
+          <img src="images/person3.jpg" alt="User 3" class="user-img right" />
+        </div>
+        <!-- User Testimonial -->
+        <div class="testimonial-content">
+          <h4 class="user-name">Albert Monica</h4>
+          <p class="user-title">Student at College</p>
+          <p class="user-rating">⭐⭐⭐⭐⭐</p>
+          <blockquote class="testimonial-text">
+            As a student of this online education website, I can confidently say
+            that it has been an incredible experience. The platform is
+            user-friendly and the courses are well-structured, making it easy
+            for me to learn at my own pace.
+          </blockquote>
+        </div>
+      </div>
+    </section>
+    <!-- پاپ‌آپ -->
+    <div id="popup" class="popup-overlay">
+      <div class="popup-content">
+        <span class="close-btn" id="closePopup">&times;</span>
+
+        <!-- فرم‌ها -->
+        <div id="formContainer">
+          <!-- فرم لاگ‌این -->
+          <form id="loginForm" class="form active-form">
+            <h2>Login</h2>
+            <label for="loginEmail">Email:</label>
+            <input
+              type="email"
+              id="loginEmail"
+              placeholder="Enter your email"
+              required
+            />
+
+            <label for="loginPassword">Password:</label>
+            <input
+              type="password"
+              id="loginPassword"
+              placeholder="Enter your password"
+              required
+            />
+
+            <button type="submit">Login</button>
+            <p>
+              Don't have an account?
+              <a href="#" id="switchToRegister">Register</a>
+            </p>
+          </form>
+
+          <!-- فرم رجیستر -->
+          <form id="registerForm" class="form">
+            <h2>Register</h2>
+            <label for="registerUsername">Username:</label>
+            <input
+              type="text"
+              id="registerUsername"
+              placeholder="Enter your username"
+              required
+            />
+
+            <label for="registerEmail">Email:</label>
+            <input
+              type="email"
+              id="registerEmail"
+              placeholder="Enter your email"
+              required
+            />
+
+            <label for="registerPassword">Password:</label>
+            <input
+              type="password"
+              id="registerPassword"
+              placeholder="Create a password"
+              required
+            />
+
+            <button type="submit">Register</button>
+            <p>
+              Already have an account?
+              <a href="#" id="switchToLogin">Login</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- بخش لوگو و توضیحات -->
+        <div class="footer-about">
+          <h2 class="footer-logo">Totur</h2>
+          <p>
+            Start your journey with Totur. Learn, grow, and succeed with our
+            expert courses.
+          </p>
+        </div>
+
+        <!-- لینک‌ها -->
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- بخش تماس -->
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p>Email: support@totur.com</p>
+          <p>Phone: +123 456 789</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- کپی‌رایت -->
+      <div class="footer-bottom">
+        <p>&copy; 2024 Totur. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
